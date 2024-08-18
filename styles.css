@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#score, #timer, #target-score {
+    font-size: 24px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px; /* Thêm góc bo tròn */
+    border: 3px solid #333; /* Thêm khung với màu tối */
+    background-color: #fff; /* Nền trắng cho các phần tử */
+    color: #333; /* Màu chữ tối */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Thêm bóng chữ */
+}
+
+#target-score {
+    font-size: 20px;
+    color: #007bff; /* Màu xanh dương nổi bật */
+}
+
+#balls-container {
+    position: relative;
+    width: 80%;
+    height: 60%;
+    overflow: hidden;
+}
+
+.ball {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#scary-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+#scary-image img {
+    width: 80%;
+    height: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+}
